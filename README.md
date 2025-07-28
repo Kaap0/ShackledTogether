@@ -13,15 +13,7 @@ A serverside Spigot plugin for chaining players together
 
 ## Demo
 
-https://github.com/user-attachments/assets/0236c6d7-1bef-4d17-8c62-7594e329c250
-
 https://github.com/user-attachments/assets/b5ccd441-e5e0-4fa9-adf5-68552abab145
-
-https://github.com/user-attachments/assets/0984a6e4-37e7-4e15-ac46-16cf20b3e899
-
-https://github.com/user-attachments/assets/92b68aa1-b5ae-4266-b04e-de6631d397c3
-
-https://github.com/user-attachments/assets/d56ff113-8e03-4c35-ac1e-bc6888388e7e
 
 ## Disclaimers
 
