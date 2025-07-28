@@ -13,7 +13,8 @@ A serverside Spigot plugin for chaining players together
 
 ## Demo
 
-<video src="https://github.com/Kaap0/ShackledTogether/raw/refs/heads/main/showcase/showcaseA.mp4" width="300"></video>
+https://github.com/user-attachments/assets/0236c6d7-1bef-4d17-8c62-7594e329c250
+
 
 ## Disclaimers
 
