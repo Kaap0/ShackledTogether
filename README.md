@@ -64,7 +64,7 @@ free would benefit all.
 
 ## Installation
 
-Download and place to plugins folder
+[Download](https://www.spigotmc.org/resources/shackledtogether.127418/) and place to plugins folder
 
 - You will need [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/) to see a chain
 
