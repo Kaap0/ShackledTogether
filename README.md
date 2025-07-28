@@ -6,14 +6,14 @@ A serverside Spigot plugin for chaining players together
 
 - ⛓️ Chain an infinite amount of players together ⛓️
 - 🛠️
-  Extensive [configurations](https://github.com/Kaap0/ShackledTogether/blob/master/src/main/java/gg/kaapo/shackledtogether/resources/config.yml)
+  Extensive [configurations](https://github.com/Kaap0/ShackledTogether/blob/main/src/main/resources/config.yml)
   🛠️
 - 💪 Pull mechanic 💪
 - 💥 Chain collision mechanic 💥
 
 ## Demo
 
-- PUT VIDEOS HERE :)
+<video src="https://github.com/Kaap0/ShackledTogether/showcase/Screencast From 2025-07-07 18-24-43.mp4" width="300" />
 
 ## Disclaimers
 
