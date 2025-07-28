@@ -1,0 +1,13 @@
+name: ShackledTogether
+version: '1.0-SNAPSHOT'
+main: gg.kaapo.shackledtogether.ShackledTogether
+api-version: '1.21'
+authors: [ Kaap0 , dtzt ]
+softdepend: [ ProtocolLib ]
+description: Narun jatkeeks
+website: Discord Mojo991
+
+commands:
+  shackle:
+    aliases:
+      - shackledtogether

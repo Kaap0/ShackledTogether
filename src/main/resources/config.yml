@@ -1,0 +1,141 @@
+##########################
+#   SHACKLED TOGETHER    #
+#     Configuration      #
+##########################
+
+# General Notes:
+# - Make sure the values are within appropriate ranges to prevent performance issues.
+# - ProtocolLib is required if using "LEAD" for chain visualization.
+
+###########
+# GENERAL #
+###########
+
+# language:
+# Default: en_us | Options: en_us, fi_fi
+language: "en_us"
+
+##########################
+#     Chain Settings     #
+##########################
+
+# chain-max-players: Defines the maximum number of players allowed in a single chain.
+# Default: 100
+chain-max-players: 100
+
+# chain-length: Specifies the length of the chain (in blocks) between adjacent players in the chain.
+# Default: 6
+chain-length: 6
+
+# chain-stretch: Defines the maximum stretch of the chain beyond the defined chain-length (in blocks).
+# Allows the chain to stretch this amount, but it's not factored in the pulling force, making a short chain with high stretch snappier.
+# Default: 0.25
+chain-stretch: 0.25
+
+# chain-elasticity: Controls the elasticity of the chain. A higher value causes players to be pulled back to each other more quickly when they exceed the chain length.
+#  This value is very delegate, so experiment with low values close to default
+# - Higher values = faster pull-back
+# - Lower values = slower, more gradual pull-back
+# Default: 0.0475
+chain-elasticity: 0.0475
+
+# chain-visualization: The visual representation of the chain between players.
+# Values:
+# - LEAD: Uses a visible lead chain between players (requires ProtocolLib).
+# - PARTICLE: Uses particle effects to represent the chain. (Kinda wonky :D)
+# - DISABLED: No visualization
+# Default: LEAD
+chain-visualization: LEAD
+
+# chain-collision: Enables or disables chain collision
+# Default: true
+chain-collision: true
+
+##########################
+# Pull Mechanic Settings #
+##########################
+
+# chain-collision: Enables or disables pull mechanic
+# Default: true
+pull-mechanic: true
+
+# pull-range: Determines the maximum distance (in blocks) a player can pull another player
+# Default: 10
+pull-range: 10
+
+# pull-efficiency: Adjusts the strength of the pull when one player pulls another.
+# Default: 0.5
+pull-efficiency: 0.5
+
+# pull-method: Determines the pulling method
+# Values:
+# - LEFT_CLICK: Players pull others by left-clicking
+# - RIGHT_CLICK: Players pull others by right-clicking, if players are more than 3 blocks apart, they must be right-clicking with something in their hand, or be behind a block, this is a stupid bukkit limitation.
+# Default: LEFT_CLICK
+pull-method: LEFT_CLICK
+
+##############
+# Safeguards #
+##############
+
+# safeguard-teleport: Kicks players off chain on teleportation
+# Values:
+# - ANY: Kicks players off chain on any teleportation
+# - WORLD_CHANGE: Kicks players off chain only when it's world changes
+# - DISABLED: Players don't leave chain on teleportation
+safeguard-teleport: WORLD_CHANGE
+
+# safeguard-death: When players dies, should he be removed from the chain?
+# Values:
+# - true: Player is removed on death
+# - false: Player stays on chain
+safeguard-death: true
+
+# safeguard-proximity: When creating/updating a chain, check if the players are close enough
+# Values:
+# - true: Checks if the players are in a chain length of each other
+# - false: No checks made
+safeguard-proximity: false
+
+# safeguard-proximity: When creating/updating a chain, check if the players are in line of sight of each other
+# Values:
+# - true: Checks if the players are in line of sight
+# - false: No checks made
+safeguard-line-of-sight: false
+
+#########################
+# Chain Particle Effect #
+#########################
+# These settings control the particle effects used to visualize the chain between players.
+
+chain:
+  particleEffect:
+    # max-particles: The maximum number of particles displayed between two players. Higher values produce a smoother visual effect but may cause lag.
+    # Default: 50
+    max-particles: 50
+
+    # size: Defines the size of the particles.
+    # Default: 1.0
+    size: 1.0
+
+    # start_color: Sets the RGB color for the particles at the start (bottom) of the chain.
+    # Default: 128, 128, 128 (Gray)
+    start_color:
+      red: 128
+      green: 128
+      blue: 128
+
+    # end_color: Sets the RGB color for the particles at the end (top) of the chain.
+    # Default: 0, 0, 0 (Black)
+    end_color:
+      red: 0
+      green: 0
+      blue: 0
+
+
+##############
+# Debug Mode #
+##############
+# debug: Some debugging in console for development
+# Default: false
+debug: false
